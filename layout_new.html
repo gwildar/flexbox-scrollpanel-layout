@@ -3,8 +3,7 @@
 <head>
   <title>test layout</title>
   <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
-  <style>
-
+  <style type="text/css">
     HTML {
       height: 100%;
       padding: 0;
@@ -20,17 +19,14 @@
     }
 
     .App-header {
-      flex: none;
       height: 50px;
     }
 
     .App-footer {
-      flex: none;
       height: 30px;
     }
 
     .App-pageHeader {
-      flex: none;
       height: 40px;
     }
 
@@ -64,13 +60,14 @@
       overflow: auto;
     }
   </style>
+  <script src="flexibility.js"></script>
 </head>
 <body class="App">
-  <header class="App-header Header" style="background: #00f">
+  <div class="App-header Header" style="background: #00f">
     <div class="Header-logo">
       <a class="" href="/">Sofia</a>
     </div>
-  </header>
+  </div>
   <div class="App-pageHeader" style="background: #f0f">
     header
   </div>
@@ -365,10 +362,7 @@
       blendt
     </div>
 
-    <div role="complementary" class="App-panel" style="background: #ff0; display: none">
-      historical
-    </div>
-    <div class="App-sidebar hidden-print" role="navigation" style="background: #0ff">
+    <div class="App-sidebar" role="navigation" style="background: #0ff">
       navigation
     </div>
   </div>
